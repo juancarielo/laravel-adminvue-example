@@ -23,5 +23,8 @@ Route::group(['middleware' => 'apiToken'], function ($router) {
 
     Route::get('dashboard', 'Api\\DashboardController@index');
 
-    Route::get('applications', 'Api\\ApplicationsController@index');
+    Route::resource('notes', 'Api\\NotesController');
+
+    #Route::get('applications', 'Api\\ApplicationsController@index');
+    #Route::get('applications/create', 'Api\\ApplicationsController@create');
 });

@@ -10,8 +10,8 @@ const TheContainer = () => import('../components/containers/TheContainer')
 import Dashboard from '../components/views/Dashboard'
 
 // Views
-import Applications from '../components/views/applications/Applications'
-import CreateApplication from '../components/views/applications/CreateApplication'
+import Notes from '../components/views/notes/Notes'
+import CreateNote from '../components/views/notes/CreateNote'
 
 // Views - Pages
 const Login = () => import('../components/views/pages/Login')
@@ -39,8 +39,8 @@ function configRoutes() {
           component: Dashboard
         },
         {
-          path: 'applications',
-          meta: {label: 'Applications'},
+          path: 'notes',
+          meta: {label: 'Notes'},
           component: {
             render(c) {
               return c('router-view')
@@ -49,13 +49,13 @@ function configRoutes() {
           children: [
             {
               path: '',
-              component: Applications,
+              component: Notes,
             },
             {
               path: 'create',
               meta: {label: 'Create Note'},
               name: 'Create Note',
-              component: CreateApplication
+              component: CreateNote
             },
           ]
         },

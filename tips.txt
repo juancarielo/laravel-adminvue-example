@@ -1,0 +1,6 @@
+# run
+php artisan jwt:secret
+
+
+43f87f4f92b6b12e34a2c02ae6105ad501d0a5b5
+07bbeb34bfa3d67f3a813d43a31ebe2d1492d15b

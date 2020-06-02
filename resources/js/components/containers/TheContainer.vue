@@ -27,9 +27,9 @@
 
         <li class="nav-item">
 
-          <router-link class="nav-link" to="/applications">
+          <router-link class="nav-link" to="/notes">
             <i class="fas fa-fw fa-paperclip"></i>
-            <span>Applications</span>
+            <span>Notes</span>
           </router-link>
 
         </li>
@@ -115,7 +115,9 @@
         <hr class="sidebar-divider d-none d-md-block">
 
         <div class="text-center d-none d-md-inline">
+
           <button class="rounded-circle border-0" id="sidebarToggle"></button>
+
         </div>
 
       </ul>
@@ -132,7 +134,6 @@
             <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
               <i class="fa fa-bars"></i>
             </button>
-
 
             <!-- Topbar Navbar -->
             <ul class="navbar-nav ml-auto">
